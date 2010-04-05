@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="origin">
+		<item name="milk">"condensed"</item>
+		<item name="strength">"normal"</item>
+		<item name="sweetness">"normal"</item>
+		<item name="ice">"no"</item>
+	</string-array>
+
+	<string-array name="milk">
+		<item name="none">"o"</item>
+		<item name="condensed"></item>
+		<item name="evaporated">"see"</item>
+	</string-array>
+
+	<string-array name="strength">
+		<item name="weak">"p'oh"</item>
+		<item name="normal"></item>
+		<item name="strong">"gao"</item>
+	</string-array>
+
+	<string-array name="sweetness">
+		<item name="none">"kosong"</item>
+		<item name="less">"siew dai"</item>
+		<item name="normal"></item>
+		<item name="more">"ga dai"</item>
+	</string-array>
+
+	<string-array name="ice">
+		<item name="yes">"peng"</item>
+		<item name="no"></item>
+	</string-array>
+
+</resources>
