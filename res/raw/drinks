@@ -1,22 +1,22 @@
 {
 	"milk": {
-		"none": "o",
+		"no": "o",
 		"condensed": "",
 		"evaporated": "see"
 	},
 	"strength": {
 		"weak": "p'oh",
-		"normal": "",
+		"regular": "",
 		"strong": "gao"
 	},
 	"sweetness": {
-		"none": "kosong",
-		"less": "siew dai",
-		"normal": "",
-		"more": "ga dai"					
+		"not at all": "kosong",
+		"a little": "siew dai",
+		"normally": "",
+		"much more": "ga dai"					
 	},
 	"ice": {
-		"yes": "peng",
-		"no": ""
+		"ice cold": "peng",
+		"piping": ""
 	}
 }

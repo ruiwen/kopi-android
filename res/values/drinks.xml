@@ -8,27 +8,27 @@
 	</string-array>
 
 	<string-array name="milk">
-		<item name="none">"o"</item>
-		<item name="condensed"></item>
-		<item name="evaporated">"see"</item>
+		<item name="none">"no"</item>
+		<item name="condensed">"condensed"</item>
+		<item name="evaporated">"evaporated"</item>
 	</string-array>
 
 	<string-array name="strength">
-		<item name="weak">"p'oh"</item>
-		<item name="normal"></item>
-		<item name="strong">"gao"</item>
+		<item name="weak">"weak"</item>
+		<item name="normal">"regular"</item>
+		<item name="strong">"strong"</item>
 	</string-array>
 
 	<string-array name="sweetness">
-		<item name="none">"kosong"</item>
-		<item name="less">"siew dai"</item>
-		<item name="normal"></item>
-		<item name="more">"ga dai"</item>
+		<item name="none">"not at all"</item>
+		<item name="less">"a little"</item>
+		<item name="normal">"normally"</item>
+		<item name="more">"much more"</item>
 	</string-array>
 
 	<string-array name="ice">
-		<item name="yes">"peng"</item>
-		<item name="no"></item>
+		<item name="yes">"ice cold"</item>
+		<item name="no">"piping hot"</item>
 	</string-array>
 
 </resources>

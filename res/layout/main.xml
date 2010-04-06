@@ -1,228 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-android:id="@+id/kopilayout"
+android:id="@+id/kopiframe"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"
 android:orientation="vertical"
 xmlns:android="http://schemas.android.com/apk/res/android"
-android:background="#555"
-android:layout_gravity="center_horizontal"
 >
-<TextView
-android:id="@+id/kopicaption"
-android:layout_width="fill_parent"
-android:layout_height="80px"
-android:layout_marginBottom="5px"
-android:text="KOPI"
-android:textSize="35px"
-android:typeface="serif"
-android:textStyle="bold|italic"
-android:gravity="center"
-android:textColor="#ededed"
-android:shadowColor="#000"
-android:shadowDy="3.0"
-android:shadowDx="2.0"
-android:shadowRadius="1.0"
->
-</TextView>
-<TextView
-android:id="@+id/milkheader"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="MILK"
-android:textSize="28px"
-android:textColor="#ededed"
-android:typeface="sans"
-android:textStyle="bold"
->
-</TextView>
-<TableRow
-android:id="@+id/milkrow"
+<RelativeLayout
+android:id="@+id/kopitext"
 android:layout_width="fill_parent"
 android:layout_height="wrap_content"
-android:orientation="horizontal"
+android:layout_marginBottom="20dp"
 >
-<Button
-android:id="@+id/milknone"
-android:layout_width="100px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="None"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-<Button
-android:id="@+id/milkcondensed"
-android:layout_width="100px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="Condensed"
-android:textSize="10px"
-android:textStyle="bold"
->
-</Button>
-<Button
-android:id="@+id/milkevaporated"
-android:layout_width="100px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="Evaporated"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-</TableRow>
-<TextView
-android:id="@+id/strengthheader"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginTop="10px"
-android:text="STRENGTH"
-android:textSize="28px"
-android:textColor="#ededed"
-android:textStyle="bold"
->
-</TextView>
-<TableRow
-android:id="@+id/strengthrow"
+	<TextView
+	android:id="@+id/kopicaption"
+	android:layout_width="fill_parent"
+	android:layout_height="80sp"
+	android:text="KOPI"
+	android:textSize="35sp"
+	android:typeface="serif"
+	android:textStyle="bold|italic"
+	android:gravity="center"
+	android:layout_centerHorizontal="true"
+	>
+	</TextView>
+</RelativeLayout>
+<LinearLayout
+android:id="@+id/lineartext"
 android:layout_width="fill_parent"
 android:layout_height="wrap_content"
-android:orientation="horizontal"
->
-<Button
-android:id="@+id/strengthweak"
-android:layout_width="100px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="Weak"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-<Button
-android:id="@+id/strengthnormal"
-android:layout_width="100px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="Normal"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-<Button
-android:id="@+id/strengthstrong"
-android:layout_width="100px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="Strong"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-</TableRow>
-<TextView
-android:id="@+id/sweetnessheader"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_marginTop="10px"
-android:text="SWEETNESS"
-android:textSize="28px"
-android:textColor="#ededed"
-android:typeface="sans"
-android:textStyle="bold"
->
-</TextView>
-<TableRow
-android:id="@+id/sweetnessrow"
-android:layout_width="fill_parent"
-android:layout_height="wrap_content"
-android:orientation="horizontal"
->
-<Button
-android:id="@+id/sweetnessnone"
-android:layout_width="80px"
-android:layout_height="40px"
-android:text="None"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-<Button
-android:id="@+id/sweetnessless"
-android:layout_width="80px"
-android:layout_height="40px"
-android:text="Less"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-<Button
-android:id="@+id/sweetnessnormal"
-android:layout_width="80px"
-android:layout_height="40px"
-android:text="Normal"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-<Button
-android:id="@+id/sweetnessmore"
-android:layout_width="80px"
-android:layout_height="40px"
-android:text="More"
-android:textSize="15px"
-android:typeface="sans"
-android:textStyle="bold"
->
-</Button>
-</TableRow>
-<TextView
-android:id="@+id/iceheader"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="ICE"
-android:textSize="28px"
-android:textColor="#ededed"
-android:textStyle="bold"
->
-</TextView>
-<TableRow
-android:id="@+id/icerow"
-android:layout_width="fill_parent"
-android:layout_height="36px"
-android:orientation="horizontal"
->
-<Button
-android:id="@+id/iceyes"
-android:layout_width="155px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="Yes"
-android:textSize="15px"
-android:textStyle="bold"
+android:orientation="vertical"
 android:gravity="center"
 >
-</Button>
-<Button
-android:id="@+id/iceno"
-android:layout_width="155px"
-android:layout_height="40px"
-android:layout_marginLeft="5px"
-android:text="No"
-android:textSize="15px"
-android:textStyle="bold"
-android:gravity="center"
-android:layout_gravity="center_horizontal"
+<RelativeLayout
+android:id="@+id/firstline"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:gravity="center">
+	<TextView
+	android:id="@+id/wantcoffee"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="I would like a"
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_centerVertical="true"
+	>
+	</TextView>
+	<Spinner
+	android:id="@+id/strengthspinner"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_toRightOf="@id/wantcoffee"
+	android:layout_centerVertical="true"
+	android:layout_marginLeft="5dp"
+	android:layout_marginRight="5dp"
+	android:entries="@array/strength"
+	android:tag="strength"
+	>
+	</Spinner>
+	<TextView
+	android:id="@+id/textcoffee"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="coffee"
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_toRightOf="@id/strengthspinner"
+	android:layout_centerVertical="true"
+	>
+	</TextView>
+</RelativeLayout>
+<RelativeLayout
+android:id="@+id/secondline"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:gravity="center">
+	<TextView
+	android:id="@+id/textwith"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="with"
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_centerVertical="true"
+	>
+	</TextView>
+	<Spinner
+	android:id="@+id/milkspinner"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerVertical="true"
+	android:layout_toRightOf="@id/textwith"
+	android:layout_marginLeft="5dp"
+	android:layout_marginRight="5dp"	
+	android:entries="@array/milk"
+	android:tag="milk"
+	>
+	</Spinner>
+	<TextView
+	android:id="@+id/textmilk"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="milk,"
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_centerVertical="true"
+	android:layout_toRightOf="@id/milkspinner"
+	>
+	</TextView>
+</RelativeLayout>
+<RelativeLayout
+android:id="@+id/thirdline"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+	<TextView
+	android:id="@+id/textwith2"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="that's"
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_centerVertical="true"
+	>
+	</TextView>
+	<Spinner
+	android:id="@+id/sweetspinner"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerVertical="true"
+	android:layout_toRightOf="@id/textwith2"
+	android:layout_marginLeft="5dp"
+	android:layout_marginRight="5dp"
+	android:entries="@array/sweetness"
+	android:tag="sweetness"
+	>
+	</Spinner>
+	<TextView
+	android:id="@+id/textsweet"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="sweetened."
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_centerVertical="true"
+	android:layout_toRightOf="@id/sweetspinner"	
+	>
+	</TextView>
+</RelativeLayout>
+<RelativeLayout
+android:id="@+id/fourthline"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content">
+	<TextView
+	android:id="@+id/textice"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Oh, and make it"
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_centerVertical="true"
+	>
+	</TextView>
+	<Spinner
+	android:id="@+id/icespinner"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_toRightOf="@id/textice"
+	android:layout_centerVertical="true"
+	android:layout_marginLeft="5dp"
+	android:entries="@array/ice"
+	android:tag="ice"
+	>
+	</Spinner>
+</RelativeLayout>
+<RelativeLayout
+android:id="@+id/fifthline"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:gravity="left"
 >
-</Button>
-</TableRow>
+	<TextView
+	android:id="@+id/textthanks"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Thank you!"
+	android:textSize="20sp"
+	android:textStyle="italic"
+	android:layout_centerVertical="true"
+	android:gravity="center"
+	>
+	</TextView>
+</RelativeLayout>
+</LinearLayout>
 </LinearLayout>
