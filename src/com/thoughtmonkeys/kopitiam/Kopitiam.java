@@ -1,35 +1,20 @@
 package com.thoughtmonkeys.kopitiam;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.InvalidPropertiesFormatException;
-import java.util.Properties;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.thoughtmonkeys.kopitiam.R;
 import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class Kopitiam extends Activity {
 	
@@ -47,7 +32,6 @@ public class Kopitiam extends Activity {
         selections = new HashMap<String, TextView>();
         
         // Initialise our drink values
-        //drinks = new HashMap<String, String[]>();
         try {        	
 	        InputStream is = this.getResources().openRawResource(R.raw.drinks);
 	        byte [] buffer = new byte[is.available()];
@@ -57,32 +41,24 @@ public class Kopitiam extends Activity {
 			
 			// Setup our Spinners
 			Spinner strengthspinner = (Spinner)findViewById(R.id.strengthspinner);
-			//String[] strengthlist = {"weak", "normal strength", "strong"};
-			//strengthspinner.setAdapter(new ArrayAdapter<String>(this, R.array.strength, strengthlist));
-			//strengthspinner.setAdapter(drinks.);
 			strengthspinner.setPrompt("Select strength of coffee");
 			strengthspinner.setOnItemSelectedListener(spinSelect);
 			strengthspinner.setSelection(1); // Strength = "normal"
 			
 			Spinner milkspinner = (Spinner)findViewById(R.id.milkspinner);
-			//milkspinner.setAdapter(new ArrayAdapter<String>(this, R.array.milk));
 			milkspinner.setPrompt("Select type of milk");
 			milkspinner.setOnItemSelectedListener(spinSelect);
 			milkspinner.setSelection(1); // Milk = "condensed"
 			
 			Spinner sweetspinner = (Spinner)findViewById(R.id.sweetspinner);
-			//sweetspinner.setAdapter(new ArrayAdapter<String>(this, R.array.sweetness));
 			sweetspinner.setPrompt("Select sweetness level");
 			sweetspinner.setOnItemSelectedListener(spinSelect);
 			sweetspinner.setSelection(2); // Sweetness = "normally"
 			
 			Spinner icespinner = (Spinner)findViewById(R.id.icespinner);
-			//icespinner.setAdapter(new ArrayAdapter<String>(this, R.array.ice));
 			icespinner.setPrompt("Select if you want ice");
 			icespinner.setOnItemSelectedListener(spinSelect);
 			icespinner.setSelection(1); // Ice = "ice cold"
-			
-			//Log.d("JSON", drinks.toString());
         }
         catch(Exception e) {
         	// Whoops
