@@ -23,6 +23,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.admob.android.ads.*;
+
 public class Kopitiam extends Activity {
 	
 	private HashMap<String, Button> selections;
