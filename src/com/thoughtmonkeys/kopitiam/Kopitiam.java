@@ -16,6 +16,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.admob.android.ads.*;
+
 public class Kopitiam extends Activity {
 	
 	private HashMap<String, TextView> selections;
