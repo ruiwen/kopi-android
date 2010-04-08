@@ -4,27 +4,38 @@ android:id="@+id/kopiframe"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"
 android:orientation="vertical"
+android:background="#2a2a2a"
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res/com.thoughtmonkeys.kopitiam"
 >
 <RelativeLayout
 android:id="@+id/kopitext"
 android:layout_width="fill_parent"
-android:layout_height="wrap_content"
+android:layout_height="85dp"
 android:layout_marginBottom="20dp"
->
+android:layout_marginTop="5dp">
+
 	<TextView
 	android:id="@+id/kopicaption"
-	android:layout_width="fill_parent"
-	android:layout_height="80sp"
+	android:layout_width="312dp"
+	android:layout_height="fill_parent"
 	android:text="KOPI"
 	android:textSize="35sp"
 	android:typeface="serif"
 	android:textStyle="bold|italic"
 	android:gravity="center"
-	android:layout_centerHorizontal="true"
+	android:shadowColor="#ff000000"
+	android:shadowDx="3.0"
+	android:shadowDy="2.0"
+	android:shadowRadius="1.2"
+	android:layout_centerInParent="true"
+	android:paddingTop="0dp"
+	android:paddingLeft="5dp"
+	android:paddingRight="5dp"
+	android:background="@drawable/roundrect"
 	>
 	</TextView>
+		
 </RelativeLayout>
 <LinearLayout
 android:id="@+id/lineartext"
