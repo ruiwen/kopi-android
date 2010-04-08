@@ -1,27 +1,18 @@
 package com.thoughtmonkeys.kopitiam;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
 import java.util.HashMap;
-import java.util.InvalidPropertiesFormatException;
-import java.util.Properties;
 
 import org.json.JSONObject;
 
 import com.thoughtmonkeys.kopitiam.R;
 import android.app.Activity;
-import android.content.Context;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.admob.android.ads.*;
 
