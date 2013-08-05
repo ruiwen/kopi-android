@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.admob.android.ads.*;
+import com.google.analytics.tracking.android.EasyTracker;
 
 public class Kopitiam extends Activity {
 	
@@ -31,6 +32,18 @@ public class Kopitiam extends Activity {
 	private HashMap<String, Button> selections;
 	//private HashMap<String, String[]> drinks;
 	private JSONObject drinks;
+	
+	@Override
+	public void onStart() {
+		super.onStart();
+		EasyTracker.getInstance().activityStart(this);
+	}
+	
+	@Override
+	public void onStop() {
+		super.onStop();
+		EasyTracker.getInstance().activityStop(this);
+	}
 	
     /** Called when the activity is first created. */
     @Override

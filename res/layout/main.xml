@@ -6,6 +6,7 @@ android:layout_height="fill_parent"
 android:orientation="vertical"
 android:background="#2a2a2a"
 xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
 xmlns:app="http://schemas.android.com/apk/res/com.thoughtmonkeys.kopitiam"
 >
 <RelativeLayout
@@ -275,17 +276,14 @@ android:layout_height="wrap_content">
         <!-- Place an AdMob ad at the bottom of the screen. -->
         <!-- It has white text on a black background. -->
         <!-- The description of the surrounding context is 'Android game'. -->
-        <com.admob.android.ads.AdView  
-          android:id="@+id/ad" 
-          android:layout_width="fill_parent" 
-          android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-          app:backgroundColor="#040404"
-          app:textColor="#a2a2a2"
-          app:keywords="Kopi"
-          app:refreshInterval="15"
-          app:testing="true"
-        />
-        <!-- We could append app:testing="true" above to always get the test ad back -->
+        <com.google.ads.AdView  
+        	android:id="@+id/ad" 
+          	android:layout_width="fill_parent" 
+          	android:layout_height="wrap_content"
+          	android:layout_alignParentBottom="true"
+		    ads:adUnitId="a14ba47e378a476"
+		    ads:adSize="SMART_BANNER"
+		    ads:testDevices="TEST_EMULATOR"
+		    ads:loadAdOnCreate="true" />       
 </RelativeLayout>
 </LinearLayout>
