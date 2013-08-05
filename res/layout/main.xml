@@ -272,10 +272,7 @@ android:tag="ice">
 <RelativeLayout
 android:id="@+id/admob"
 android:layout_width="fill_parent"
-android:layout_height="wrap_content">
-        <!-- Place an AdMob ad at the bottom of the screen. -->
-        <!-- It has white text on a black background. -->
-        <!-- The description of the surrounding context is 'Android game'. -->
+android:layout_height="wrap_content">.
         <com.google.ads.AdView  
         	android:id="@+id/ad" 
           	android:layout_width="fill_parent" 
