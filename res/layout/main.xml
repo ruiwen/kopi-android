@@ -16,24 +16,25 @@ android:layout_marginBottom="20dp"
 android:layout_marginTop="5dp">
 
 	<TextView
-	android:id="@+id/kopicaption"
-	android:layout_width="312dp"
-	android:layout_height="fill_parent"
-	android:text="KOPI"
-	android:textSize="35sp"
-	android:typeface="serif"
-	android:textStyle="bold|italic"
-	android:gravity="center"
-	android:shadowColor="#ff000000"
-	android:shadowDx="3.0"
-	android:shadowDy="2.0"
-	android:shadowRadius="1.2"
-	android:layout_centerInParent="true"
-	android:paddingTop="0dp"
-	android:paddingLeft="5dp"
-	android:paddingRight="5dp"
-	android:background="@drawable/roundrect"
-	>
+		android:id="@+id/kopicaption"
+		android:layout_width="312dp"
+		android:layout_height="fill_parent"
+		android:layout_centerInParent="true"
+		android:background="@drawable/roundrect"
+		android:gravity="center"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:paddingTop="0dp"
+		android:shadowColor="#ff000000"
+		android:shadowDx="3.0"
+		android:shadowDy="2.0"
+		android:shadowRadius="1.2"
+		android:text="KOPI"
+		android:textColor="#ededed"
+		android:textSize="35sp"
+		android:textStyle="bold|italic"
+		android:typeface="serif" >
+
 	</TextView>
 		
 </RelativeLayout>
@@ -41,7 +42,8 @@ android:layout_marginTop="5dp">
 android:id="@+id/milkrow"
 android:layout_width="fill_parent"
 android:layout_height="wrap_content"
-android:gravity="fill_horizontal">
+android:gravity="fill_horizontal"
+android:tag="milk">
 	<TextView
 	android:id="@+id/milkheader"
 	android:layout_width="fill_parent"
@@ -59,7 +61,6 @@ android:gravity="fill_horizontal">
 	android:layout_height="wrap_content"
 	android:layout_marginLeft="5px"
 	android:layout_below="@id/milkheader"
-	android:layout_alignLeft="@id/milkrow"
 	android:background="@drawable/roundbutton"
 	android:text="None"
 	android:textSize="18sp"
@@ -99,7 +100,8 @@ android:gravity="fill_horizontal">
 android:id="@+id/strengthrow"
 android:layout_width="fill_parent"
 android:layout_height="wrap_content"
-android:layout_marginTop="10px">
+android:layout_marginTop="10px"
+android:tag="strength">
 	<TextView
 	android:id="@+id/strengthheader"
 	android:layout_width="wrap_content"
@@ -156,7 +158,8 @@ android:layout_marginTop="10px">
 android:id="@+id/sweetnessrow"
 android:layout_width="fill_parent"
 android:layout_height="wrap_content"
-android:layout_marginTop="10px">
+android:layout_marginTop="10px"
+android:tag="sweetness">
 	<TextView
 	android:id="@+id/sweetnessheader"
 	android:layout_width="wrap_content"
@@ -224,7 +227,8 @@ android:layout_marginTop="10px">
 android:id="@+id/icerow"
 android:layout_width="fill_parent"
 android:layout_height="wrap_content"
-android:layout_marginTop="10px">
+android:layout_marginTop="10px"
+android:tag="ice">
 	<TextView
 	android:id="@+id/iceheader"
 	android:layout_width="wrap_content"
@@ -267,8 +271,7 @@ android:layout_marginTop="10px">
 <RelativeLayout
 android:id="@+id/admob"
 android:layout_width="fill_parent"
-android:layout_height="wrap_content"
->
+android:layout_height="wrap_content">
         <!-- Place an AdMob ad at the bottom of the screen. -->
         <!-- It has white text on a black background. -->
         <!-- The description of the surrounding context is 'Android game'. -->
@@ -281,8 +284,8 @@ android:layout_height="wrap_content"
           app:textColor="#a2a2a2"
           app:keywords="Kopi"
           app:refreshInterval="15"
+          app:testing="true"
         />
         <!-- We could append app:testing="true" above to always get the test ad back -->
 </RelativeLayout>
-
 </LinearLayout>
